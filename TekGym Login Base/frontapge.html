@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Social Media Bars -->
+        <div class="social-media-bar">
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                  <img src="images/logo-twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                  <img src="images/logo-facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon">
+                  <img src="images/logo-youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://pinterest.com" target="_blank" class="social-icon">
+                  <img src="images/logo-pinterest.svg" alt="Pinterest">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                  <img src="images/logo-instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://reddit.com" target="_blank" class="social-icon">
+                  <img src="images/logo-reddit.svg" alt="Reddit">
+                </a>
+            </div>
+
+            <!-- Log In / Sign Up Buttons -->
+            <button id="loginBtn">Sign Up / Log In</button>
+        </div>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="loginForm">
+                  <h2 class="stripe">Login</h2>
+                    <div class="userType-option">
+                        <label for="user">
+                            User
+                            <input type="radio" id="user" name="userType" value="user" checked>
+                        </label>
+                    </div>
+                    <div class="userType-option">
+                        <label for="trainer">
+                            Trainer
+                            <input type="radio" id="trainer" name="userType" value="trainer">
+                        </label>
+                    </div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Log In</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="registerLink">Register</a></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation">
+        <div class="nav-container">
+            <div class="logo">TekGym</div>
+            <nav class="nav-options">
+                <a href="#">Support</a>
+                <a href="#">Fitness Plan</a>
+                <a href="#">Recipes</a>
+                <a href="#">Trainers</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="gym-section">
+      <div class="gym-overlay">
+        <!-- Add any content you want to display over the image here -->
+      </div>
+    </section>
+
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
