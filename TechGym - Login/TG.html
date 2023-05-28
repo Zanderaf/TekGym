@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH GYM</title>
+    <link rel="stylesheet" href="still.css" type="text/css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="index.html"><i>TechGym</a></a> </h1>
+                <nav>
+                    <a href="#nula">O Nama</a>
+                    <a href="#jedan">Treneri</a>
+                    <a href="#dva">Oprema</a>
+                    <a href="#tri">Lokacija</a>
+                    <!-- Log In / Sign Up Buttons -->
+                    <button id="loginBtn">Sign Up / Log In</button>
+    </div>
+                                
+        <div id="loginModal" class="modal">
+        <div class="modal-content">
+           <span class="close">&times;</span>
+            <form id="loginForm">
+            <h2 class="stripe">Login</h2>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Log In</button>
+            </form>
+                 <p>Don't have an account? <a href="#" id="registerLink">Register</a></p>
+            </div>
+        </div>
+
+<!-- Registration Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <form id="registerForm" action="proccess-signup.php" method="post">
+            <h2 class="modal-title">Register</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname">
+            <label for="reg_email">Email:</label>
+            <input type="email" id="reg_email" name="email">
+            <label for="username">Display Name:</label>
+            <input type="text" id="username" name="username">
+            <label for="reg_password">Password:</label>
+            <input type="password" id="reg_password" name="password">
+            <label for="reg_password_confirmation">Confirm password:</label>
+            <input type="password" id="reg_password_confirmation" name="password_confirmation">
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="loginLink">Login</a></p>
+    </div>
+</div>
+
+
+</header>
+          </nav> </i>
+            <div class="clear">
+            </header>
+            </div>
+
+                <main>
+
+                    <img class="cover" src="images/Cover.jpg">
+                    <section id="nula">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo assumenda adipisci perferendis, beatae, odio dignissimos voluptatum quos laudantium dolorem sit atque exercitationem, non dolorum labore molestias eos tenetur ad iure.</p>
+                    </section>
+                    <section id="jedan">
+                        <h2>Treneri</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores a nesciunt facere. Necessitatibus ab esse nulla quibusdam harum tenetur, error fugit repellat quos eum accusantium quasi, odio enim expedita.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, minus! Repellat, voluptates neque provident quibusdam doloribus saepe voluptatibus, porro cupiditate minima libero nobis sapiente! Eos suscipit quibusdam nihil rerum inventore.</p>
+                        <article>
+                            <img src="images/fc1.jpg" >
+                            <p><span class="name">John Doe</span> | Trener</p>
+                        </article>
+                        <article>
+                            <img src="images/fc1.jpg">
+                            <p><span class="name">Juan Perez</span> | Trener</p>
+                        </article>
+                        <article class="margina">
+                            <img src="images/fc1.jpg">
+                            <p><span class="name">Jan Novak</span> | Trener</p>
+                        </article>
+                        <div class="clear"></div>
+                    </section>
+                    <section id="dva">
+                        <h2>Oprema</h2>
+                        <img src="images/jedino bitno.jpg" class="trecina" />
+                        <img src="images/jedino bitno.jpg" class="trecina" />
+                        <img src="images/jedino bitno.jpg" class="trecina margina" />
+                        <img src="images/jedino bitno.jpg" class="trecina" />
+                        <img src="images/jedino bitno.jpg" class="trecina" />
+                        <img src="images/jedino bitno.jpg" class="trecina margina" />
+
+                        <div class="clear"></div>
+                    </section>
+                    <section id="tri">
+                        <h2>Lokacija</h2>
+                        
+                        <img src="images/loc.png" />
+                        
+                        <div class="clear"></div>
+
+                    </section>
+                   
+                </main>
+                <div class="wrapper">
+                    <footer>
+                        <p>Copyright &copy; FIMEK 2023; Projekt Tech Gym &trade;</p>
+                    </footer>
+                </div>
+            
+                <script src="scripts.js"></script>
+
+</body>
+</html>

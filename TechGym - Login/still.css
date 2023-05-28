@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: font1;
+    src: url(fonts/eElectroBox.ttf);
+}
+.clear {
+    clear: both;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(197, 57, 32);
+    background-color: rgb(65, 65, 65);
+}
+
+p {
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    background-color: rgba(25, 29, 33, 0.95);
+}
+
+.wrapper:first-child {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+
+}
+header, main {
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    padding-top: 20px;
+    float: left;
+    
+
+}
+header h1  a {
+    font-family: font1;
+    font-size: 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(197, 57, 32);
+}
+header nav {
+    padding-top: 40px;
+    float: right;
+    
+
+}
+header nav a {
+    margin-left: 15px;
+    padding: 40px 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(197, 57, 32);
+    transition: 0.5s;
+    font-family: font1;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: #666;   
+}
+
+img.cover {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+main > section {
+    margin-bottom: 60px;
+}
+section h2 {
+    margin-bottom: 60px;
+    border-bottom: 2px solid #191d21;
+    font-family: font1;
+    font-size: 40px;
+    font-weight:  normal;
+    text-transform: uppercase;
+    color: rgb(197, 57, 32);
+}
+
+
+/* Slike Trenera */
+
+
+section#jedan article {
+    width: 32%;
+    margin-top: 40px;
+    margin-right: 2%;
+    float: left;
+    position: relative;
+}
+
+section#jedan article:last-child {
+    margin-right: 0;
+}
+
+section#jedan article img {
+    width: 100%;
+
+}
+section#jedan article p{
+    background-color: rgba(25, 29, 33, 0.7);
+    padding: 10px;
+    font-family: font1;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    margin: 0;
+    color: rgb(197, 57, 32);
+
+}
+
+span.name {
+    color: rgba(255, 255, 255, 0.7);
+}
+img.trecina {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+
+}
+.margina {
+    margin-right: 0 !important;
+
+
+}
+footer {
+    font-family: font1;
+    height: 70px;
+    padding-top: 15px;
+    text-align: center;   
+}
+
+
+
+/* LOGIN KOD */ 
+/* LOGIN KOD */ 
+/* LOGIN KOD */ 
+/* LOGIN KOD */ 
+/* LOGIN KOD */ 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid black; /* Add a black border around the modal */
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Login & Registration Form Styles */
+.modal-content form {
+    width: 100%;
+}
+
+.modal-content form h2 {
+    color: orangered;
+}
+
+.modal-content form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.modal-content form input[type="email"],
+.modal-content form input[type="password"],
+.modal-content form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.modal-content form button[type="submit"] {
+    background-color: orangered;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-content form button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.modal-content form p {
+    margin-top: 10px;
+}
+
+.modal-content form p a {
+    color: orangered;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+#loginForm input, #registerForm input {
+    width: 90%; /* Adjust width as needed */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000; /* Black border around the text fields */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
